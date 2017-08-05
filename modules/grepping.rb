@@ -8,7 +8,7 @@ module Z3PO
         Z3PO.send_message(313009155969384448, "!musichelp")
   end
 
-	Z3PO.message(with_text: "that's my fetish") do |event|
+	Z3PO.message(with_text: /that's my fetish/i) do |event|
 		num = Random.rand(2)
 			if num == 1
 				event.message.delete
