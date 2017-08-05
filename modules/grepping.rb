@@ -12,10 +12,10 @@ module Z3PO
 		num = Random.rand(2)
 			if num == 1
 				event.message.delete
-				Z3PO.send_message(event.channel, "<@#{event.user}>: http://i.imgur.com/7PyvoJu.jpg")
+				Z3PO.send_message(event.channel, "<@#{event.user.username}>: http://i.imgur.com/7PyvoJu.jpg")
 			else
 				event.message.delete
-				Z3PO.send_message(event.channel, "<@#{event.user}>: http://i.imgur.com/VOBdI06.jpg")
+				Z3PO.send_message(event.channel, "<@#{event.user.username}>: http://i.imgur.com/VOBdI06.jpg")
 			end
 	end
 end
