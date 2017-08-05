@@ -11,9 +11,9 @@ module Z3PO
 	Z3PO.message(with_text: "that's my fetish") do |event|
 		num = Random.rand(2)
 			if num == 1
-				Z3PO.send_message(event.channel, "<#{event.user.id}: http://i.imgur.com/7PyvoJu.jpg")
+				Z3PO.send_message(event.channel, "<#{event.user.id}>: http://i.imgur.com/7PyvoJu.jpg")
 			else
-				Z3PO.send_message(event.channel, "<#{event.user.id}: http://i.imgur.com/VOBdI06.jpg")
+				Z3PO.send_message(event.channel, "<#{event.user.id}>: http://i.imgur.com/VOBdI06.jpg")
 			end
 	end
 end
