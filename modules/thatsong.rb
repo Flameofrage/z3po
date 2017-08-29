@@ -30,6 +30,6 @@ module Z3PO
 
 
   Z3PO.message(with_text: /(penis|dick)/i) do |event|
-    Z3PO.send_message(event.channel, "#{event.user.username}, #{lyrics.sample}"
+    Z3PO.send_message(event.channel, "#{event.user.username}, #{lyrics.sample}")
   end
 end
