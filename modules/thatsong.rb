@@ -1,5 +1,5 @@
 module Z3PO
-  lyrics = {
+  lyrics = Array.new(
     "My dick cost a late night fee, your dick got the HIV",
     "My dick plays on the double feature screen, your dick went straight to DVD",
     "My dick - bigger than a bridge, your dick look like a little kid's",
@@ -26,7 +26,7 @@ module Z3PO
     "My dick - grade-A beef, your dick - Mayday geek",
     "My dick - sick and dangerous, your dick - quick and painless",
     "My dick - 'nuff said, your dick loves Fred"
-  }
+  )
 
 
   Z3PO.message(with_text: /(penis|dick)/i) do |event|
