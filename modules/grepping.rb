@@ -12,7 +12,11 @@ module Z3PO
 		Z3PO.send_message(event.channel, "https://i.imgur.com/ord2XEU.jpg")
   end
 	
-	Z3PO.message(with_text: /that's my fetish/i) do |event|
+  Z3PO.message(with_text: "sunscreen") do |event|
+    Z3PO.send_message(event.channel, "SPF 100? I hope it's in stock, cause I rub it on my nips and the bell end of my cock!")
+  end
+	
+  Z3PO.message(with_text: /that's my fetish/i) do |event|
 		num = Random.rand(2)
 			if num == 1
 				event.message.delete
