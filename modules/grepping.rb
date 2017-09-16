@@ -8,6 +8,13 @@ module Z3PO
 		Z3PO.send_message(313009155969384448, "!musichelp")
   end
 
+  Z3PO.message(with_text: "Currently, yuki_nyiaya is streaming") do |event|
+    replace = event.message.content
+    event.message.delete
+    replace.sub!("yuki_nyiaya", "❄YUKI❄")
+    Z3PO.send_message(event.channel, replace)
+  end
+
   Z3PO.message(with_text: "monica") do |event|
 		Z3PO.send_message(event.channel, "https://i.imgur.com/ord2XEU.jpg")
   end
