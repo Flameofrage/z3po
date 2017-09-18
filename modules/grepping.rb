@@ -2,6 +2,10 @@ module Z3PO
   Z3PO.message(contains: /4chan/i) do |event|
 		Z3PO.send_temporary_message(event.channel, "https://www.youtube.com/watch?v=GoRPVsN2SVM", 15)
   end
+  
+  Z3PO.message(contains: /what flavor is it/i) do |event|
+    Z3PO.send_message(event.channel, "Boot to the head!")
+  end
 
   Z3PO.message(contains: /music help/i) do |event|
 		Z3PO.send_message(313009155969384448, "<@#{event.user.id}>, please allow me")
