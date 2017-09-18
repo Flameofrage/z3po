@@ -8,7 +8,7 @@ module Z3PO
 		Z3PO.send_message(313009155969384448, "!musichelp")
   end
 
-  Z3PO.message(from: "R2Z2", contains: "Currently, yuki_nyiaya is streaming") do |event|
+  Z3PO.message(contains: /Currently, yuki_nyiaya is streaming/i) do |event|
     replace = event.message.content
     event.message.delete
     replace.sub!("yuki_nyiaya", "❄YUKI❄")
