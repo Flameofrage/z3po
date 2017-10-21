@@ -7,6 +7,10 @@ module Z3PO
     Z3PO.send_message(event.channel, "Boot to the head!")
   end
 
+  Z3PO.message(contains: /kill me/i) do |event|
+    Z3PO.send_message(event.channel, "<@#{event.user.id}>, :bang: :gun: You're dead")
+  end
+
   Z3PO.message(contains: /music help/i) do |event|
 		Z3PO.send_message(313009155969384448, "<@#{event.user.id}>, please allow me")
 		Z3PO.send_message(313009155969384448, "!musichelp")
