@@ -41,4 +41,10 @@ module Z3PO
 				Z3PO.send_message(event.channel, "#{event.user.username} meant http://i.imgur.com/VOBdI06.jpg")
 			end
 	end
+
+  Z3PO.message(contains: /what time is it/i) do |event|
+    Z3PO.send_message(event.channel, "<@#{event.user.id}>, http://i.imgur.com/5WUBQOd.gif")
+  end
 end
+
+
