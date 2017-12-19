@@ -7,7 +7,7 @@ module Z3PO
   # Bot Config
   Z3PO = Discordrb::Bot.new(token: CONFIG['token'],
 			  client_id: CONFIG['client_id'],
-			  ignore_bots: true)
+			  ignore_bots: false)
 
   #Z3po Modules
   Dir['modules/*.rb'].each { |mod| require_relative mod; puts "Loaded: #{mod}" }
