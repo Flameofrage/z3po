@@ -1,7 +1,5 @@
 require 'discordrb'
 require 'yaml'
-require 'sinatra'
-require 'haml'
 include FileUtils::Verbose
 # Bot Config file
 CONFIG = YAML.load_file('data/config.yaml')
@@ -17,3 +15,4 @@ Dir['modules/*.rb'].each { |mod| require_relative mod; puts "Loaded: #{mod}" }
 #Aysnc
 Z3PO.run :async
 
+Z3PO.sync
