@@ -26,6 +26,10 @@ Z3PO.message(contains: /monica/i) do |event|
 		Z3PO.send_message(event.channel, "https://i.imgur.com/ord2XEU.jpg")
 end
 
+Z3PO.message(contains: /ignore me/i) do |event|
+  Z3PO.send_message(event.channel, "https://i.imgur.com/YecVu1d.jpg")
+end
+
 Z3PO.message(contains: /sunscreen/i) do |event|
   Z3PO.send_message(event.channel, "SPF 100? I hope it's in stock, cause I rub it on my nips and the bell end of my cock!")
 end
