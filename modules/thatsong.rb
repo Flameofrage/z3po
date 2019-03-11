@@ -28,6 +28,6 @@ lyrics = Array[
 ]
 
 
-Z3PO.message(contains: /(penis|dick)/i) do |event|
+Z3PO.message(contains: /^(penis|dick)$/i) do |event|
   Z3PO.send_message(event.channel, "<@#{event.user.id}>, #{lyrics.sample}")
 end
